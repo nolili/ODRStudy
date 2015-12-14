@@ -37,7 +37,6 @@ class MasterViewController: UITableViewController {
         }
         
         request.progress.addObserver(self, forKeyPath: "fractionCompleted", options: .New, context: &MasterViewControllerObservingContext)
-        print("loading")
     }
     
     func showProgress () {
